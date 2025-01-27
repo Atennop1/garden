@@ -1,5 +1,4 @@
 import { FaGithub, FaTelegram } from "react-icons/fa";
-import { SiNextdotjs } from "react-icons/si";
 
 function Footer() {
 	return (
