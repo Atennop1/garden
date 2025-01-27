@@ -11,7 +11,7 @@ export default function Home() {
 		<>
 			<Header />
 			<main className="flex min-h-[512px]">
-				<div className="flex flex-col ml-10 md:ml-48 mt-44">
+				<div className="flex flex-col ml-[26px] md:ml-48 mt-44">
 					<div className="gap-12">
 						<h1 className="text-5xl font-bold md:text-6xl">
 							hello, <br /> i am <span className="text-green-600">atennop</span>

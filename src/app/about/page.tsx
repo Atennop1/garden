@@ -8,7 +8,7 @@ export default function About() {
 		<>
 			<Header />
 			<div className="container mx-auto px-4 py-8 md:pt-40 max-w-7xl min-h-screen">
-				<div className="flex flex-col items-center md:flex-row md:justify-between md:items-start">
+				<div className="flex flex-col items-center md:flex-row md:justify-between md:items-start mb-40">
 					<div className="w-full max-w-[300px] md:max-w-none md:w-5/12">
 						<AboutImage />
 					</div>
