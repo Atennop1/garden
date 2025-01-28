@@ -13,67 +13,39 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip"
+} from "@/components/ui/tooltip";
 
-function TechStack() {
+export default function TechStack() {
 	return (
-		<div>
-			<p className="font-bold text-xl text-center pb-3">tech stack</p>
-			{/* logos in row */}
-			<div className="flex flex-row gap-4">
-			<TooltipProvider>
-				<Tooltip>
-					<TooltipTrigger asChild>
-						<TbBrandCpp  size={40} />
-					</TooltipTrigger>
-					<TooltipContent>
-						<p className="font-semibold">CPP</p>
-					</TooltipContent>
-				</Tooltip>
-				<Tooltip>
-					<TooltipTrigger asChild>
-						<TbBrandCSharp size={40} className="ml-[-3px]"/>
-					</TooltipTrigger>
-					<TooltipContent>
-						<p className="font-semibold">C#</p>
-					</TooltipContent>
-				</Tooltip>
-				<Tooltip>
-					<TooltipTrigger asChild>
-						<SiUnrealengine size={40} />
-					</TooltipTrigger>
-					<TooltipContent>
-						<p className="font-semibold">Unreal</p>
-					</TooltipContent>
-				</Tooltip>
-				<Tooltip>
-					<TooltipTrigger asChild>
-						<SiUnity size={40} />
-					</TooltipTrigger>
-					<TooltipContent>
-						<p className="font-semibold">Unity</p>
-					</TooltipContent>
-				</Tooltip>
-				<Tooltip>
-					<TooltipTrigger asChild>
-						<SiOpengl size={60} className="mt-[-10px]" />
-					</TooltipTrigger>
-					<TooltipContent>
-						<p className="font-semibold">OpenGL</p>
-					</TooltipContent>
-				</Tooltip>
-				<Tooltip>
-					<TooltipTrigger asChild>
-						<SiPostgresql size={40} />
-					</TooltipTrigger>
-					<TooltipContent>
-						<p className="font-semibold">PostgreSQL</p>
-					</TooltipContent>
-				</Tooltip>
-			</TooltipProvider>
+		<div className="space-y-3">
+			<h2 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+				Tech Stack
+			</h2>
+			<div className="flex flex-wrap gap-4">
+				<TooltipProvider>
+					{[
+						{ icon: TbBrandCpp, name: "C++", size: 40, voffset: "0px" },
+						{ icon: TbBrandCSharp, name: "C#", size: 40, voffset: "0px" },
+						{ icon: SiUnrealengine, name: "Unreal Engine", size: 40, voffset: "0px" },
+						{ icon: SiUnity, name: "Unity Engine", size: 40, voffset: "0px" },
+						{ icon: SiOpengl, name: "OpenGL", size: 60, voffset: "-10px" },
+						{ icon: SiPostgresql, name: "PostgreSQL", size: 40, voffset: "0px" },
+					].map((tech, index) => (
+						<Tooltip key={index}>
+							<TooltipTrigger asChild>
+								<div className="text-gray-600 transition-all duration-200 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 hover:scale-110">
+									<tech.icon size={tech.size} className={"mt-[" + tech.voffset + "]"} />
+								</div>
+							</TooltipTrigger>
+							<TooltipContent className="border-gray-100 bg-white dark:border-gray-700 dark:bg-gray-800">
+								<p className="text-sm font-medium text-gray-700 dark:text-gray-200">
+									{tech.name}
+								</p>
+							</TooltipContent>
+						</Tooltip>
+					))}
+				</TooltipProvider>
 			</div>
 		</div>
 	);
 }
-
-export default TechStack;

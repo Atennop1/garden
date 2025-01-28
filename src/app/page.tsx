@@ -16,14 +16,14 @@ export default function Home() {
 						<h1 className="text-5xl font-bold md:text-6xl">
 							hello, <br /> i am <span className="text-green-600">atennop</span>
 						</h1>
-						<h2 className="text-2xl font-bold">
+						<h2 className="text-2xl font-bold text-gray-600 dark:text-gray-400">
 							<TypeAnimation
 								sequence={[
-									"i am a C++ developer",
+									"C++ developer",
 									1000,
-									"i am an Unreal Engine developer",
+									"Unreal Engine developer",
 									1000,
-									"i am an OpenGL developer",
+									"OpenGL developer",
 									1000,
 								]}
 								repeat={Infinity}
