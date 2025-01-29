@@ -9,7 +9,7 @@ const firaCode = Fira_Code({
 
 export const metadata: Metadata = {
 	title: "atennop",
-	description: "atennop bio",
+	description: "atennop's bio and info",
 };
 
 export default function RootLayout({

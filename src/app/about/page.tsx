@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import TechStack from "@/components/TechStack";
 import ThemeToogle from "@/components/ThemeToogle";
+
 export default function About() {
 	return (
 		<>
