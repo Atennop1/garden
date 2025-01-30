@@ -8,12 +8,12 @@ export default function About() {
 	return (
 		<>
 			<Header />
-			<div className="container mx-auto px-4 py-8 md:pt-40 max-w-7xl">
-				<div className="flex flex-col items-center md:flex-row md:justify-between md:items-start mb-40 md:mb-0">
-					<div className="w-full max-w-[300px] md:max-w-none md:w-5/12">
+			<div className="container mx-auto px-4 py-8 md:pt-36 max-w-7xl">
+				<div className="flex flex-col items-center md:flex-row md:justify-between md:items-start mb-40">
+					<div className="w-full max-w-[300px] md:max-w-none md:w-5/12 animate-fade-in">
 						<AboutImage />
 					</div>
-					<div className="flex flex-col items-center text-center md:text-left md:w-6/12">
+					<div className="flex flex-col items-center text-center md:text-left md:w-7/12 animate-fade-in">
 						<p className="text-3xl md:text-5xl font-bold mb-4 mt-14">
 							atennop
 						</p>
