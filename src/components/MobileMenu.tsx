@@ -14,7 +14,7 @@ const MobileMenu = () => {
   const toggleMenu = () => setIsOpen(!isOpen)
 
   return (
-    <div className="md:hidden">
+    <div className="md:hidden z-50">
       <button
         onClick={toggleMenu}
         className="text-2xl font-bold focus:outline-none"
