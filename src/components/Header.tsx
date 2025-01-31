@@ -9,10 +9,7 @@ function Header() {
 
   return (
     <header className="flex justify-between items-center p-5 shadow-md">
-      <div className="pl-2 lg:pl-48 md:flex">
-        <p className="text-2xl font-semibold">atennop</p>
-      </div>
-      <div className="hidden md:flex space-x-4 pr-10 lg:pr-48">
+      <div className="hidden md:flex space-x-4 pr-10 lg:pr-48 ml-auto">
           <Link
               href="/"
               className={`text-xl font-semibold hover:text-green-600 ${

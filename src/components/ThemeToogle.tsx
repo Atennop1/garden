@@ -4,32 +4,28 @@ import { useState, useEffect } from 'react';
 import { MoonIcon, SunIcon } from 'lucide-react';
 
 export default function ThemeToggle() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    if (typeof window === 'undefined') return false;
+    const savedTheme = localStorage.getItem('theme');
+    const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    return savedTheme ? savedTheme === 'dark' : systemDark;
+  });
 
   useEffect(() => {
     const htmlElement = document.documentElement;
-    const savedTheme = localStorage.getItem('theme');
-    
-    if (savedTheme) {
-      htmlElement.classList.add(savedTheme);
-      setIsDarkMode(savedTheme === 'dark');
+    if (isDarkMode) {
+      htmlElement.classList.add('dark');
     } else {
-      const isSystemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      setIsDarkMode(isSystemDark);
-      if (isSystemDark) htmlElement.classList.add('dark');
+      htmlElement.classList.remove('dark');
     }
-  }, []);
+  }, [isDarkMode]);
 
   const toggleTheme = () => {
-    const htmlElement = document.documentElement;
-    if (isDarkMode) {
-      htmlElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-    } else {
-      htmlElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    }
-    setIsDarkMode(!isDarkMode);
+    setIsDarkMode(prev => {
+      const newTheme = !prev;
+      localStorage.setItem('theme', newTheme ? 'dark' : 'light');
+      return newTheme;
+    });
   };
 
   return (
