@@ -1,5 +1,7 @@
 import type { Config } from "tailwindcss";
 
+import tailwindcss_animate from "tailwindcss-animate";
+
 export default {
     darkMode: ["class"],
     content: [
@@ -56,8 +58,18 @@ export default {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+		keyframes: {
+			fadeInOut: {
+				"0%, 35.7%": { opacity: "0" },
+				"50%, 85.7%": { opacity: "1" },
+				"100%": { opacity: "0" },
+			},
+		},
+		animation: {
+			fadeInOut: "fadeInOut 8s infinite ease-in-out",
+		},
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindcss_animate],
 } satisfies Config;
