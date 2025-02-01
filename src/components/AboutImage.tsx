@@ -17,7 +17,7 @@ export const AboutImage = () => {
                 src={img2}
                 alt="About"
                 width={400}
-                height={447}
+                height={400}
                 className="absolute top-0 left-0 w-full h-full object-cover animate-fadeInOut"
             />
         </div>
