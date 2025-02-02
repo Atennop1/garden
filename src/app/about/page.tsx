@@ -13,7 +13,7 @@ export default function About() {
 						<AboutImage />
 					</div>
 					<div className="flex flex-col items-center text-center md:text-left md:w-7/12 animate-fade-in">
-						<p className="text-3xl md:text-5xl font-bold mb-4 mt-4 md:mt-[-45px]">
+						<p className="text-3xl md:text-5xl font-bold mb-4 mt-6 md:mt-[-45px]">
 							atennop
 						</p>
 						<p className="text-base md:text-lg text-center">
@@ -23,7 +23,7 @@ export default function About() {
 							work with engines like Source. In general, I like everything related to IT, so I like to
 							make both 3D model parsers on OpenGL and websites on Next.js (like this one)
 						</p>
-						<div className="mt-7 w-full flex justify-center">
+						<div className="mt-7 mb-2 w-full flex justify-center">
 							<TechStack />
 						</div>
 					</div>
