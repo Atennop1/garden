@@ -1,7 +1,19 @@
 "use client"
 
 import React, { useState, useCallback } from "react"
-import { SiUnrealengine, SiUnity, SiPostgresql, SiOpengl, SiPython, SiCmake, SiBlender, SiHtml5, SiCss3 } from "react-icons/si"
+import {
+	SiUnrealengine,
+	SiUnity,
+	SiPostgresql,
+	SiPython,
+	SiCmake,
+	SiHtml5,
+	SiBlender,
+	SiOpengl,
+	SiCss3,
+	SiGit, SiDocker, SiGo
+} from "react-icons/si"
+
 import { TbBrandCSharp, TbBrandCpp } from "react-icons/tb"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 
@@ -21,21 +33,26 @@ export default function TechStack() {
 	}, [])
 
 	const techStack = [
+		{ icon: SiGo, name: "Go", size: 40, voffset: "0px" },
 		{ icon: TbBrandCpp, name: "C++", size: 40, voffset: "0px" },
 		{ icon: TbBrandCSharp, name: "C#", size: 40, voffset: "0px" },
-		{ icon: SiUnrealengine, name: "Unreal Engine", size: 40, voffset: "0px" },
-		{ icon: SiUnity, name: "Unity Engine", size: 40, voffset: "0px" },
-		{ icon: SiOpengl, name: "OpenGL", size: 60, voffset: "-10px" },
 		{ icon: SiPostgresql, name: "PostgreSQL", size: 40, voffset: "0px" },
+		{ icon: SiDocker, name: "Docker", size: 40, voffset: "0px" },
+		{ icon: SiGit, name: "Git", size: 40, voffset: "0px" },
 	]
 
 	const familiarStack = [
 		{ icon: SiPython, name: "Python", size: 40, voffset: "0px" },
 		{ icon: SiCmake, name: "CMake", size: 40, voffset: "0px" },
-		{ icon: SiBlender, name: "Blender", size: 40, voffset: "0px" },
 		{ icon: SiHtml5, name: "HTML", size: 40, voffset: "0px" },
 		{ icon: SiCss3, name: "CSS", size: 40, voffset: "0px" },
+		{ icon: SiUnity, name: "Unity Engine", size: 40, voffset: "0px" },
+		{ icon: SiUnrealengine, name: "Unreal Engine", size: 40, voffset: "0px" },
+		{ icon: SiBlender, name: "Blender", size: 40, voffset: "0px" },
+		{ icon: SiOpengl, name: "OpenGL", size: 60, voffset: "-10px" },
 	]
+
+	const maxLength = Math.max(techStack.length, familiarStack.length)
 
 	return (
 		<div className="space-y-3">
@@ -43,13 +60,13 @@ export default function TechStack() {
 			<div className="flex flex-wrap gap-4 justify-center">
 				<TooltipProvider>
 					{techStack.map((tech, index) => (
-						<Tooltip key={index + techStack.length} open={openTooltip === index + techStack.length}>
+						<Tooltip key={index + maxLength} open={openTooltip === index + maxLength}>
 							<TooltipTrigger asChild>
 								<div
 									className="text-gray-600 transition-all duration-200 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 hover:scale-110"
-									onMouseEnter={() => handleMouseEnter(index + techStack.length)}
+									onMouseEnter={() => handleMouseEnter(index + maxLength)}
 									onMouseLeave={handleMouseLeave}
-									onTouchStart={() => handleTouchStart(index + techStack.length)}
+									onTouchStart={() => handleTouchStart(index + maxLength)}
 								>
 									<tech.icon size={tech.size} style={{ marginTop: tech.voffset }} />
 								</div>

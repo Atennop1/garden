@@ -20,9 +20,9 @@ export default function Home() {
 								sequence={[
 									"C++ developer",
 									1000,
-									"Unreal Engine developer",
+									"Backend developer",
 									1000,
-									"OpenGL developer",
+									"Go developer",
 									1000,
 								]}
 								repeat={Infinity}

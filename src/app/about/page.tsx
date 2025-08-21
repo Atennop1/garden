@@ -17,11 +17,10 @@ export default function About() {
 							atennop
 						</p>
 						<p className="text-base md:text-lg text-center">
-							I&apos;ve been programming since 12yo, developing computer games. At first I used C# and Unity,
-							but later I switched to C++, Unreal and proprietary (including my own) engines. Now I want
-							to dive deeper into multiplayer games, OpenGL and CMake, so that in the future I can
-							work with engines like Source. In general, I like everything related to IT, so I like to
-							make both 3D model parsers on OpenGL and websites on Next.js (like this one)
+							I&apos;ve been programming since 12, initially developing computer games using C# and Unity, then switching to C++ and Unreal.
+							Now I&apos;m focusing on backend development, learning Go and PostgreSQL, and building my understanding of system design and architecture.
+							I like creating things from scratch — from custom game engines to backend services.
+							I also enjoy exploring new tools and technologies, from OpenGL to web development with Next.js.
 						</p>
 						<div className="mt-7 mb-2 w-full flex justify-center">
 							<TechStack />
