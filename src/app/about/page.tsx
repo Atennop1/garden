@@ -17,7 +17,7 @@ export default function About() {
 							atennop
 						</p>
 						<p className="text-base md:text-lg text-center">
-							I&apos;ve been programming since 12, initially developing computer games using C# and Unity, then switching to C++ and Unreal.
+							I&apos;ve been programming since 12yo, initially developing computer games using C# and Unity, then switching to C++ and Unreal.
 							Now I&apos;m focusing on backend development, learning Go and PostgreSQL, and building my understanding of system design and architecture.
 							I like creating things from scratch — from custom game engines to backend services.
 							I also enjoy exploring new tools and technologies, from OpenGL to web development with Next.js.
