@@ -44,7 +44,7 @@ permalink: verbose
 
 ### In backend
 
-- [[content/|blog]] – this website where I share random notes with world
+- [[.|blog]] – this website where I share random notes with world
 - [Friendly CLI](https://github.com/friendly-social/cli) – client for Friendly social network
 - TBA trading project
 
