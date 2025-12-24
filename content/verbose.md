@@ -86,6 +86,7 @@ other little stuff in my archived GitHub repos.
 - ![[inline_telegram.png|13]] **DM:** [@atennop](https://t.me/atennop) – _primary_
 - ![[inline_telegram.png|13]] **Channel:** [@atennopmeta](https://t.me/atennopmeta) – _updates_
 - ![[inline_obsidian.png|13]] **Blog:** [[.|index]] – _this website with random notes_
+- ![[inline_x.svg|13]] **X:** [@atennop](https://x.com/atennop) – _my dumb tweets_
 - ![[inline_github.png|13]] **GitHub:** [Atennop1](https://github.com/Atennop1) – _we can collab maybe_
 - ![[inline_gmail.png|13]] **Email**: atennop@gmail.com – _i reply pretty fast_
 
