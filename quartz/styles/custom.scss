@@ -1,0 +1,35 @@
+@use "./base.scss";
+
+// set space between text and unordered lists
+p:has(+ ul) {
+  margin-bottom: 0.3em;
+}
+
+p + ul {
+  margin-top: 0.3em;
+}
+
+// same with headers
+:is(h1, h2, h3, h4, h5, h6):has(+ ul) { 
+  margin-bottom: 0.3em; 
+} 
+
+:is(h1, h2, h3, h4, h5, h6) + ul { 
+  margin-top: 0.3em; 
+}
+
+:is(h1, h2, h3, h4, h5, h6):has(+ p) {
+  margin-bottom: 0.3em;
+}
+
+:is(h1, h2, h3, h4, h5, h6) + p {
+  margin-top: 0.3em;
+}
+
+:is(h1, h2, h3, h4, h5, h6):has(+ :is(h1, h2, h3, h4, h5, h6)) {
+  margin-bottom: 0.5em;
+}
+
+:is(h1, h2, h3, h4, h5, h6) + :is(h1, h2, h3, h4, h5, h6) {
+  margin-top: 0.5em;
+}
