@@ -3,7 +3,6 @@ title: verbose
 description: random facts about me
 permalink: verbose
 ---
-
 # Verbose
 
 <p align="center">
@@ -66,7 +65,7 @@ other little stuff in my archived GitHub repos.
   <br>I wanna move from gamedev on C# / C++ to backend in Go and be hired as Middle engineer by the beginning of my second
   year in university.
 - **Learning and making personal projects** (2021 - present)
-  <br>I was learning gamedev, first Unity and then Unreal Engine, and later decided to move to backend, so official start of my
+  <br>I was learning gamedev, first Unity and then Unreal Engine, and later decided to move to backend ([[content/field_switch.md|here]] is why), so official start of my
   career is delayed second time, which obviously makes me sad.
 
 ## Education
@@ -74,7 +73,7 @@ other little stuff in my archived GitHub repos.
 - **Master's Degree** (someday - someday + 2)
   <br>My dream is to move to USA and apply for Master's, preferably in Stanford University. I don't have any ideas how I will manage to do this yet.
 - **Bachelor's Degree** (2025 - 2029)
-  <br>Software Engineering at [FinUniver / ФинУнивер ](https://en.wikipedia.org/wiki/Financial_University_under_the_Government_of_the_Russian_Federation)
+  <br>Software Engineering at [FinUniver / ФинУнивер ](https://en.wikipedia.org/wiki/Financial_University_under_the_Government_of_the_Russian_Federation) ([[content/university_choice.md|here]] is explanation of my choice)
 
 ## Languages 
 
