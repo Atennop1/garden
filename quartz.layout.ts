@@ -48,11 +48,12 @@ export const defaultContentPageLayout: PageLayout = {
             { Component: Component.PageTitle() },
         ],
     })),
+    Component.MobileOnly(Component.Spacer()),
     Component.MobileOnly(Component.PageTitle()),
     Component.MobileOnly(Component.Spacer()),
     Component.MobileOnly(Component.Darkmode()),
     Component.Search(),
-    Component.DesktopOnly(Component.Explorer()),
+    Component.Explorer(),
   ],
   right: [
     Component.DesktopOnly(Component.TableOfContents()),

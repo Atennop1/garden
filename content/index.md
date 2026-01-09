@@ -2,9 +2,13 @@
 title: atennop
 description: "metadata about @atennop"
 ---
-<p align="center">
-    <img src="./resources/avatar_circle.png" height="300" width="300" style="margin-bottom:0rem;">
-</p>
+<div style="text-align: center;">
+
+[\<\< prev](https://webring.otomir23.me/atennop/prev) | [webring](https://webring.otomir23.me) \| [next \>\>](https://webring.otomir23.me/atennop/next)
+
+<img src="./resources/avatar_circle.png" height="300" width="300" style="margin-bottom:0rem;">
+
+</div>
 
 # atennop
 
