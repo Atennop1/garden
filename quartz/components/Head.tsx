@@ -96,6 +96,8 @@ export default (() => {
           }
         })}
       </head>
+
+	  <script defer src="/_vercel/insights/script.js"></script>
     )
   }
 
