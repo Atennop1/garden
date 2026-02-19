@@ -98,8 +98,11 @@ export default (() => {
           }
         })}
 
-<script defer src="/_vercel/insights/script.js"></script>
-
+		<script
+		  defer
+		  data-website-id="prj_65ZFuusXr2frOIyKFSl6Fs7v6jgR"
+		  src="/_vercel/insights/script.js"
+		/>
       </head>
     )
   }
