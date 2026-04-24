@@ -17,7 +17,7 @@ as a broken 800+ day contribution streak and zero posts in my Telegram blog. The
 retrain and change the direction of my development was unbearable. But eventually, I understood that I actually stopped 
 creating _games_ back in 2022 when I released my first game. Since then, I had been creating _complex systems_ with games as 
 a side product. That means I love to create anything complex and meaningful, from critical backend systems to advanced game 
-engines, and a transition from gamedev was unavoidable (like [Richard Fabian](https://mastodon.gamedev.place/@fabs), who 
+engines, and a transition from gamedev was unavoidable (like [**Richard Fabian**](https://mastodon.gamedev.place/@fabs), who 
 moved from gamedev to embedded engineering).
 
 After all, without this transition, I wouldn't have started using Neovim and Linux in general, nor would I have become a 
