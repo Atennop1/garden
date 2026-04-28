@@ -17,8 +17,8 @@ This is my own digital garden, idea of which was shamelessly stolen from [y9san9
 Few core things about me:
 - I am really passionate about programming and tech in general
 - I wrote my first line of code when I was 12yo 7th grader
-- I moved from gamedev to backend
-- I use Debian GNU/Linux and Neovim, btw
+- I moved from game development to backend engineering
+- I use i3wm, Debian GNU/Linux and Neovim, btw
 
 You can find more useless info [[verbose|here]].
 
