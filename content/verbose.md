@@ -1,6 +1,6 @@
 ---
 title: verbose
-description: random facts about me
+description: some facts about me
 permalink: verbose
 ---
 # Verbose
@@ -25,8 +25,7 @@ permalink: verbose
 ![[inline_git.svg]]
 
 ## General
-- **Full Name:** Anton Martyukov
-- **Unique Name:** atennop
+- **Nickname:** atennop
 - **Height:** 5'11" / 180cm
 - **Weight:** 139lbs / 63kg
 - **Eye Color:** green
